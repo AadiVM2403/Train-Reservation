@@ -1,0 +1,28 @@
+/* Set a light blue background color for the entire page */
+body {
+  background-color: #05bbf8; /* Light blue color */
+  min-height: 100vh;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.button-container {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center items horizontally */
+  margin-top: 10px; /* Optional: space above the button */
+}
+
+.booking-form button {
+  padding: 10px 20px; /* Add some padding for better clickability */
+  background-color: #f6f8fa; /* Original button color */
+  color: rgb(10, 10, 10); /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor changes to pointer */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.booking-form button:hover {
+  background-color: yellow; /* Change color to yellow on hover */
+  color: black; /* Change text color for better contrast */
+}

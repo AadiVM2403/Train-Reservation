@@ -1,0 +1,15 @@
+<h1 class='title'>{{ title }}</h1>
+
+<div class="booking-form">
+  <label for="numSeats">Number of Seats:</label>
+  <input type="number" #seatCountInput />
+  <div class="button-container"> 
+    <button (click)="bookSeats(seatCountInput.value)">Book Seats</button>
+  </div>
+</div>
+
+<div class="seating-chart">
+  <div *ngFor="let seat of seats" [class]="getSeatClass(seat)">
+    {{ seat.seatNumber }}
+  </div>
+</div>
